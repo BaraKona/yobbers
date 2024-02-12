@@ -3,9 +3,9 @@ import { Link, Outlet } from "react-router-dom";
 
 export const Navbar: FC = () => {
 	return (
-		<main>
-			<nav>
-				<ul className="flex bg-black">
+		<main className="max-w-screen-lg mx-auto ">
+			<nav className="w-full mx-auto">
+				<ul className="flex gap-4">
 					<NavLink to="/">Home</NavLink>
 					<NavLink to="/Applications">Applications</NavLink>
 				</ul>
