@@ -2,6 +2,7 @@ import { RouteObject, createBrowserRouter, redirect } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Applications } from "./pages/Applications";
 import { Navbar } from "./components/navigation/Navbar";
+import { Rejected } from "./pages/Rejected";
 
 const mainRoutes: RouteObject[] = [
 	{
@@ -15,6 +16,10 @@ const mainRoutes: RouteObject[] = [
 	{
 		path: "/Applications",
 		element: <Applications />,
+	},
+	{
+		path: "/Rejected",
+		element: <Rejected />,
 	},
 ];
 

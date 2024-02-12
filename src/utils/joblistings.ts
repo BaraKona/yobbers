@@ -31,7 +31,7 @@ export const jobs = [
 		hourlySalary: "£34",
 		date: "12 days ago",
 		description:
-			"A fullstack developer with experience in React.js, Vue.js, Angular.js, Node.js, Python, and Ruby. Must have 3 years of experience.",
+			"A fullstack developer with experience in React.js, Vue.js, Angular.js, Node.js, Python, and Ruby.",
 		types: ["full-time", "part-time"],
 	},
 	{
@@ -119,7 +119,7 @@ export const jobs = [
 		hourlySalary: "£18",
 		date: "55 days ago",
 		description:
-			"A database administrator with experience in MySQL, PostgreSQL, and MongoDB. Must have 3 years of experience.",
+			"A database administrator with experience in MySQL, PostgreSQL, and MongoDB.",
 		types: ["full-time", "part-time"],
 	},
 	{
