@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed on your system:
 2. Clone the project repository by running:
 
 ```sh
-git clone https://github.com/BaraKona/yobbers
+git clone https://github.com/BaraKona/yobbers.git
 
 ```
 
