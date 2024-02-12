@@ -4,8 +4,6 @@ import { applyForJob, jobList } from "../signals/JobSignal";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 export const Home: FC = () => {
-	// const { jobList, applyForJob } = useJobContext();
-	console.log(jobList.value.length);
 	const [parent] = useAutoAnimate();
 	return (
 		<main>
@@ -15,7 +13,7 @@ export const Home: FC = () => {
 				) : (
 					jobList.value.map((job) => (
 						<JobCard
-							key={job.id}
+							key={job.title}
 							job={job}
 							onClick={() => applyForJob(job)}
 							status="none"

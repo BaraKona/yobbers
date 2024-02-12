@@ -12,7 +12,7 @@ export const Rejected = () => {
 				) : (
 					rejectedJobs.value.map((job) => (
 						<JobCard
-							key={job.id}
+							key={job.title}
 							job={job}
 							onClick={() => applyForJob(job)}
 							status="rejected"
