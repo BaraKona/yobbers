@@ -11,6 +11,7 @@ export const jobs = [
 		description:
 			"A frontend developer with experience in React.js, Vue.js, and Angular.js. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 2,
@@ -22,6 +23,7 @@ export const jobs = [
 		description:
 			"A backend developer with experience in Node.js, Python, and Ruby. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 3,
@@ -33,6 +35,7 @@ export const jobs = [
 		description:
 			"A fullstack developer with experience in React.js, Vue.js, Angular.js, Node.js, Python, and Ruby.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 4,
@@ -44,6 +47,7 @@ export const jobs = [
 		description:
 			"A devops engineer with experience in AWS, Azure, and GCP. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 5,
@@ -55,6 +59,7 @@ export const jobs = [
 		description:
 			"A data scientist with experience in Python, R, and SQL. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 6,
@@ -66,6 +71,7 @@ export const jobs = [
 		description:
 			"A ux/ui designer with experience in Figma, Sketch, and Adobe XD. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 7,
@@ -77,6 +83,7 @@ export const jobs = [
 		description:
 			"A product manager with experience in Jira, Trello, and Asana. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 9,
@@ -88,6 +95,7 @@ export const jobs = [
 		description:
 			"A qa engineer with experience in Selenium, Cypress, and Jest. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 10,
@@ -99,6 +107,7 @@ export const jobs = [
 		description:
 			"A security engineer with experience in OWASP, NIST, and ISO 27001. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 11,
@@ -110,6 +119,7 @@ export const jobs = [
 		description:
 			"A network engineer with experience in Cisco, Juniper, and Arista. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 12,
@@ -121,6 +131,7 @@ export const jobs = [
 		description:
 			"A database administrator with experience in MySQL, PostgreSQL, and MongoDB.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 13,
@@ -132,6 +143,7 @@ export const jobs = [
 		description:
 			"A cloud engineer with experience in AWS, Azure, and GCP. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 14,
@@ -143,6 +155,7 @@ export const jobs = [
 		description:
 			"A machine learning engineer with experience in TensorFlow, PyTorch, and Keras. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 15,
@@ -154,6 +167,7 @@ export const jobs = [
 		description:
 			"An artificial intelligence engineer with experience in TensorFlow, PyTorch, and Keras. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 16,
@@ -165,6 +179,7 @@ export const jobs = [
 		description:
 			"A blockchain developer with experience in Ethereum, Solidity, and Hyperledger. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 17,
@@ -176,6 +191,7 @@ export const jobs = [
 		description:
 			"A cybersecurity analyst with experience in OWASP, NIST, and ISO 27001. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 18,
@@ -187,6 +203,7 @@ export const jobs = [
 		description:
 			"A web developer with experience in HTML, CSS, and JavaScript. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 19,
@@ -198,6 +215,7 @@ export const jobs = [
 		description:
 			"A mobile developer with experience in React Native, Flutter, and Swift. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 	{
 		id: 20,
@@ -209,5 +227,6 @@ export const jobs = [
 		description:
 			"A game developer with experience in Unity, Unreal Engine, and Godot. Must have 3 years of experience.",
 		types: ["full-time", "part-time"],
+		status: "none",
 	},
 ] as Job[];

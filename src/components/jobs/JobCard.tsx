@@ -5,7 +5,8 @@ import { JobIconRenderer } from "./JobIconRenderer";
 
 export const JobCard: FC<{
 	job: Job;
-}> = ({ job }) => {
+	onClick: () => void;
+}> = ({ job, onClick }) => {
 	return (
 		<section
 			key={job.id}
@@ -43,7 +44,10 @@ export const JobCard: FC<{
 					</p>
 					<p className="text-sm">posted {job.date}</p>
 				</div>
-				<button className="flex ml-auto px-3 py-1 bg-gray-700/40 text-sm text-white rounded-md hover:bg-gray-400/20 transition-all ease-in-out duration-300">
+				<button
+					className="flex ml-auto px-3 py-1 bg-gray-700/40 text-sm text-white rounded-md hover:bg-gray-400/20 transition-all ease-in-out duration-300"
+					onClick={onClick}
+				>
 					Apply
 				</button>
 			</div>
