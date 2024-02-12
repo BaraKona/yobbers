@@ -10,7 +10,12 @@ export const Applications = () => {
 					<p>You have not applied for any jobs yet..</p>
 				) : (
 					appliedJobs.value.map((job) => (
-						<JobCard key={job.id} job={job} onClick={() => applyForJob(job)} />
+						<JobCard
+							key={job.id}
+							job={job}
+							onClick={() => applyForJob(job)}
+							status="offered"
+						/>
 					))
 				)}
 			</ul>

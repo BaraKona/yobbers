@@ -1,5 +1,25 @@
-import { FC } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { JobCard } from "../components/jobs/JobCard";
+import { rejectedJobs, applyForJob } from "../signals/JobSignal";
 
-export const Rejected: FC = () => {
-	return <main>Rejected</main>;
+export const Rejected = () => {
+	const [parent] = useAutoAnimate();
+	return (
+		<div>
+			<ul className="flex flex-wrap gap-2" ref={parent}>
+				{rejectedJobs.value.length === 0 ? (
+					<p>You have not applied for any jobs yet..</p>
+				) : (
+					rejectedJobs.value.map((job) => (
+						<JobCard
+							key={job.id}
+							job={job}
+							onClick={() => applyForJob(job)}
+							status="rejected"
+						/>
+					))
+				)}
+			</ul>
+		</div>
+	);
 };

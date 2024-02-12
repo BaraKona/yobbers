@@ -21,7 +21,10 @@ export const rejectedJobs = signal<Job[]>(
 export function applyForJob(job: Job) {
 	jobList.value = jobList.value.filter((j) => j.id !== job.id);
 
-	appliedJobs.value = [...appliedJobs.value, job];
+	job.status = Math.random() > 0.5 ? "rejected" : "offered";
+	job.status === "rejected"
+		? (rejectedJobs.value = [...rejectedJobs.value, job])
+		: (appliedJobs.value = [...appliedJobs.value, job]);
 
 	updateLocalStorage();
 }

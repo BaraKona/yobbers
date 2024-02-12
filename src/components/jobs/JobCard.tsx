@@ -6,7 +6,8 @@ import { JobIconRenderer } from "./JobIconRenderer";
 export const JobCard: FC<{
 	job: Job;
 	onClick: () => void;
-}> = ({ job, onClick }) => {
+	status?: "applied" | "rejected" | "offered" | "none";
+}> = ({ job, onClick, status }) => {
 	return (
 		<section
 			key={job.id}
@@ -47,8 +48,11 @@ export const JobCard: FC<{
 				<button
 					className="flex ml-auto px-3 py-1 bg-gray-700/40 text-sm text-white rounded-md hover:bg-gray-400/20 transition-all ease-in-out duration-300"
 					onClick={onClick}
+					disabled={job.status !== "none"}
 				>
-					Apply
+					{status === "none" && "Apply"}
+					{status === "rejected" && "Rejected"}
+					{status === "offered" && "Offered"}
 				</button>
 			</div>
 		</section>

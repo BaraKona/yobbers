@@ -14,7 +14,12 @@ export const Home: FC = () => {
 					<p>No jobs available</p>
 				) : (
 					jobList.value.map((job) => (
-						<JobCard key={job.id} job={job} onClick={() => applyForJob(job)} />
+						<JobCard
+							key={job.id}
+							job={job}
+							onClick={() => applyForJob(job)}
+							status="none"
+						/>
 					))
 				)}
 			</ul>

@@ -7,7 +7,7 @@ export type Job = {
 	date: string;
 	description: string;
 	types: string[];
-	status: "applied" | "rejected" | "none";
+	status: "applied" | "rejected" | "offered" | "none";
 };
 
 export type JobType = {
